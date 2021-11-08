@@ -1,9 +1,7 @@
 //Business Logic
 
 let beep = [];
-
-
-
+function beepBoop(userInput) {
 for (i=0; i<=userInput; i++) {
   let stringNumber = (i.toString().split(""))
   if (stringNumber.includes("3")) {
@@ -16,7 +14,9 @@ for (i=0; i<=userInput; i++) {
     beep.push(i);
   }
 }
-console.log(beep)
+  return beep;
+}
+
 
 
 //UI Logic
@@ -29,5 +29,4 @@ $(document).ready(function() {
     $("#robogersOutput").text(result);
   });
 });
-
     
