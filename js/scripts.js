@@ -18,8 +18,9 @@
 
  function beepBoop(number) { 
   let beep = [];
-  for (i=0; i<=number; i++) {
-  let stringNumber = (number.toString().split(""))
+  for (let i=0; i<=number; i++) {
+  let stringNumber = (i.toString().split(""));
+  console.log(stringNumber);
   if (stringNumber.includes("3")) {
     beep.push("Won't you be my neighbor");
     console.log(beep);
@@ -28,13 +29,13 @@
   } else if (stringNumber.includes("1")) {
     beep.push("Beep!");
   } else {
-    beep.push(number);
+    console.log("made it");
+    beep.push(i);
   };
-  return beep;
 }
+console.log(beep);
+  return beep.join(", ");
 } 
-
-
 
 //UI Logic
 
