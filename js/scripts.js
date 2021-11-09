@@ -1,8 +1,11 @@
 //Business Logic
 
-let beep = [];
-function beepBoop(userInput) {
-for (i=0; i<=userInput; i++) {
+
+
+function beepBoop(number) { 
+  let beep = [];
+for (i=0; i<=number; i++) {
+  console.log(number);
   let stringNumber = (i.toString().split(""))
   if (stringNumber.includes("3")) {
     beep.push("Won't you be my neighbor");
@@ -12,10 +15,10 @@ for (i=0; i<=userInput; i++) {
     beep.push("Beep!");
   } else {
     beep.push(i);
-  }
-}
+  };
   return beep;
 }
+}  
 
 
 
@@ -24,9 +27,10 @@ for (i=0; i<=userInput; i++) {
 $(document).ready(function() {
   $("form#input").submit(function(event) {
     event.preventDefault();
-    const userInput = $("#enterNumber").val();
-    let result = beep;
-    $("#robogersOutput").text(result);
+    const number = $("#enterNumber").val()
+    let result = beepBoop(number);
+    $("#robogersOutput").html(result);
   });
 });
+
     
