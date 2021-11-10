@@ -2,4 +2,7 @@ body {
   background-color: black;
   color: whitesmoke;
   font-family: monospace;
+  max-width: 960px;
+      margin-left: auto;
+      margin-right: auto;
 }
