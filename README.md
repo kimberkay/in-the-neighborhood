@@ -14,7 +14,7 @@
 
 ## Description
 
-__A web application for a user to input a number and recieve a little "Beep, Booop, Won't you be my neighbor?" if they enter a 1, 2, and 3 anywhere in their number._
+__A web application for a user to input a number and recieve a message from Mr. Roboger._
 
 ## Setup/Installation Requirements
 
