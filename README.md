@@ -58,7 +58,7 @@ _Test 4: () It should find all elements with "3","2", then "1"  and create new a
 
 ## Known Bugs
 
-* So many bugs. It doesn't work :(
+No known bugs
 
 ## License
 
